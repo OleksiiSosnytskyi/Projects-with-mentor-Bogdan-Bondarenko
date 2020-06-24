@@ -74,14 +74,16 @@
         </div>
       </section>
 
-      <!-- разделе отсутствует заголовок. Подумайте об использовании элементов h2-, h6 -->
+      <!--это после валидатора разделе отсутствует заголовок. Подумайте об использовании элементов h2-, h6 -->
       <section class="layout__sect">
         <div class="container">
           <ul class="blocks-list">
             <li class="blocks-item">
-              <svg class="">
-                <use href="./images/sprite.svg#icon-antenna"></use>
-              </svg>
+              <div class="blocks-box">
+                <svg class="blocks-icon">
+                  <use href="./images/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <p class="blocks-title">Внимание к деталям</p>
               <p class="blocks-text">
                 Идейные соображения, а также начало повседневной работы по
@@ -89,9 +91,11 @@
               </p>
             </li>
             <li class="blocks-item">
-              <svg class="">
-                <use href="./images/sprite.svg#icon-clock"></use>
-              </svg>
+              <div class="blocks-box">
+                <svg class="blocks-icon">
+                  <use href="./images/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
               <p class="blocks-title">Пунктуальность</p>
               <p class="blocks-text">
                 Задача организации, в особенности же рамки и место обучения
@@ -99,9 +103,11 @@
               </p>
             </li>
             <li class="blocks-item">
-              <svg class="">
-                <use href="./images/sprite.svg#icon-diagram"></use>
-              </svg>
+              <div class="blocks-box">
+                <svg class="blocks-icon">
+                  <use href="./images/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <p class="blocks-title">Планирование</p>
               <p class="blocks-text">
                 Равным образом консультация с широким активом в значительной
@@ -109,9 +115,11 @@
               </p>
             </li>
             <li class="blocks-item">
-              <svg class="">
-                <use href="./images/sprite.svg#icon-astronaut"></use>
-              </svg>
+              <div class="blocks-box">
+                <svg class="blocks-icon">
+                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <p class="blocks-title">Современные технологии</p>
               <p class="blocks-text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -126,7 +134,7 @@
         <div class="container">
           <h2 class="layout__sect-title">Чем мы занимаемся</h2>
           <ul class="blocks-list blocks-list--second">
-            <li class="blocks-item">
+            <li class="blocks-item blocks-item--second">
               <div class="blocks-item__img">
                 <img
                   src="./images/laptopopti.jpg"
@@ -137,7 +145,7 @@
               </div>
               <p class="blocks-item__title">Десктопные приложения</p>
             </li>
-            <li class="blocks-item">
+            <li class="blocks-item blocks-item--second">
               <div class="blocks-item__img">
                 <img
                   src="./images/mobileappopti.jpg"
@@ -148,7 +156,7 @@
               </div>
               <p class="blocks-item__title">Мобильные приложения</p>
             </li>
-            <li class="blocks-item">
+            <li class="blocks-item blocks-item--second">
               <div class="blocks-item__img">
                 <img
                   src="./images/designdecisionopti.jpg"
@@ -327,44 +335,32 @@
           <ul class="layout__sect-list">
             <li class="layout__sect-item">
               <a href="" class="layout__sect-link">
-                <svg>
-                  <use href="./images/sprite.svg#icon-client1"></use>
-                </svg>
+                <img src="./images/client1.svg" alt="" />
               </a>
             </li>
             <li class="layout__sect-item">
               <a href="" class="layout__sect-link">
-                <svg class="layout__sect-icon">
-                  <use href="./images/sprite.svg#icon-client2"></use>
-                </svg>
+                <img src="./images/client2.svg" alt="" />
               </a>
             </li>
             <li class="layout__sect-item">
               <a href="" class="layout__sect-link">
-                <svg>
-                  <use href="./images/sprite.svg#icon-client3"></use>
-                </svg>
+                <img src="./images/client3.svg" alt="" />
               </a>
             </li>
             <li class="layout__sect-item">
               <a href="" class="layout__sect-link">
-                <svg>
-                  <use href="./images/sprite.svg#icon-client4"></use>
-                </svg>
+                <img src="./images/client4.svg" alt="" />
               </a>
             </li>
             <li class="layout__sect-item">
               <a href="" class="layout__sect-link">
-                <svg>
-                  <use href="./images/sprite.svg#icon-client5"></use>
-                </svg>
+                <img src="./images/client5.svg" alt="" />
               </a>
             </li>
             <li class="layout__sect-item">
               <a href="" class="layout__sect-link">
-                <svg>
-                  <use href="./images/sprite.svg#icon-client6"></use>
-                </svg>
+                <img src="./images/client6.svg" alt="" />
               </a>
             </li>
           </ul>
@@ -423,7 +419,9 @@
               </li>
             </ul>
           </li>
-          <li class="signe-up"></li>
+          <li class="footer__item">
+            <p class="footer__item-title">Подпишитесь на рассылку</p>
+          </li>
         </ul>
       </div>
     </footer>
